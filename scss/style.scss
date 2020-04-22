@@ -1,0 +1,123 @@
+%font-pn-bold {
+    font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+%font-pn-light {
+    font-family: "ProximaNova-Light", Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+%font-pn-regular {
+    font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+%font-pn-semibold {
+    font-family: "ProximaNova-Semibold", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+%bg-pos {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+body {
+    background-color: tomato;
+    @extend %font-pn-regular;
+}
+
+.container {
+    max-width: 320px;
+    margin: 0 auto;
+
+}
+
+.row.top {
+    width: 100%;
+    height: 568px;
+    background-image: url(../img/top/320/bg_img.jpg);
+    position: relative;
+    z-index: -2;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 137px;
+        height: 178px;
+        position: absolute;
+        top: 170px;
+        left: 50%;
+        margin-left: -67px;
+        background-image: url(../img/top/rectangle.svg);
+         z-index: -1;
+    }
+
+    .top__upperPart {
+        //padding: 0 90px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .surface {
+        width: 150px;
+        height: 40px;
+        margin-top: 36px;
+        background-image: url(../img/top/surface1.png);
+        @extend %bg-pos;
+    }
+
+    .for-athlets{
+        font-size: 0;
+        color: white;
+        line-height: 40px;
+        position: absolute;
+        text-transform: uppercase;
+    }
+    .top__center{
+        margin-top: 115px;
+
+        font-size: 32px;
+        line-height: 40px;
+        @extend %font-pn-bold;
+        color: white;
+        .text{
+            padding: 5px 10px;
+        }
+        .up-text{
+            text-align: left;
+        }
+
+        .down-text{
+            width: 253px;
+            margin: 0 0 0 auto;
+        }
+
+    }
+}
+
+
+
+.s1 {
+    @extend %font-pn-bold;
+}
+
+.s2 {
+    @extend %font-pn-light;
+}
+
+.s3 {
+    @extend %font-pn-regular;
+}
+
+.s4 {
+    @extend %font-pn-semibold;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
