@@ -26,12 +26,13 @@
 
 
 body {
-    background-color: tomato;
+    background-color: wheat;
     @extend %font-pn-regular;
 }
 
 .container {
-    max-width: 320px;
+    width: 320px;
+    min-width: 320px;
     margin: 0 auto;
 
 }
@@ -53,7 +54,7 @@ body {
         left: 50%;
         margin-left: -67px;
         background-image: url(../img/top/rectangle.svg);
-         z-index: -1;
+        z-index: -1;
     }
 
     .top__upperPart {
@@ -70,32 +71,95 @@ body {
         @extend %bg-pos;
     }
 
-    .for-athlets{
+    .for-athlets {
         font-size: 0;
         color: white;
         line-height: 40px;
         position: absolute;
         text-transform: uppercase;
     }
-    .top__center{
+
+    .top__center {
         margin-top: 115px;
 
         font-size: 32px;
         line-height: 40px;
         @extend %font-pn-bold;
         color: white;
-        .text{
+
+        .text {
             padding: 5px 10px;
         }
-        .up-text{
+
+        .up-text {
             text-align: left;
         }
 
-        .down-text{
+        .down-text {
             width: 253px;
             margin: 0 0 0 auto;
         }
+    }
 
+    .menu {
+        color: #9071ea;
+    }
+
+    .top__soft {
+        .button {
+            background-image: url('../img/top/top_button.svg');
+            @extend%bg-pos;
+            width: 152px;
+            height: 60px;
+
+            position: relative;
+
+            background-color: transparent;
+            border-color: transparent;
+            padding-bottom: 12px;
+            text-align: left;
+
+            font-size: 8px;
+            text-transform: uppercase;
+            color: white;
+
+            .btn-txt-1 {
+                @extend%font-pn-light;
+            }
+
+            .btn-txt-2 {
+                @extend%font-pn-semibold;
+            }
+        }
+        .apple {
+            padding-left: 50px;
+            &:before{
+                content: '';
+                display: block;
+                position: absolute;
+                left: 24px;
+                top: 12px;
+                width: 20px;
+                height: 20px;
+                background-image: url('../img/top/icon_apple.png');
+                @extend%bg-pos;
+            }
+        }
+
+        .google {
+            padding-left: 70px;
+            &:before{
+                content: '';
+                display: block;
+                position: absolute;
+                left: 35px;
+                top: 15px;
+                width: 20px;
+                height: 20px;
+                background-image: url('../img/top/icon_google_play.png');
+                @extend%bg-pos;
+            }
+        }
     }
 }
 
