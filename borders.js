@@ -33,6 +33,11 @@ document.addEventListener('DOMContentLoaded', init);
 setInterval(() => {
     console.log("width - ", window.screen.width);
     let bBtn = document.querySelector(".rendBtn");
-    bBtn.innerHTML = `Show blocks  ${window.screen.width}`;
+    // bBtn.innerHTML = `Show blocks  ${window.screen.width}`;
+    bBtn.innerHTML = `Show blocks  ${window.innerWidth}`;
 }
     , 600);
+
+
+// alert( window.innerWidth ); // полная ширина окна
+// alert( document.documentElement.clientWidth ); 
