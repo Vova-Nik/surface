@@ -1,7 +1,7 @@
 $color-siren: #5e42b0;
 
-$screen-medium: 1199px;
-$screen-small: 799px;
+$screen-medium: 1380px;
+$screen-small: 767px;
 
 %font-pn-bold {
     font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
@@ -37,33 +37,37 @@ body {
 
 .container {
     max-width: 1920px;
-    min-width: 300px;
+    min-width: 320px;
     margin: 0 auto;
 }
 
 /****************************************************************************/
 
-.row.top {
+.top {
     width: 100%;
     background-image: url(../img/top/1200/football.jpg);
     padding-bottom: 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
     .top__upperPart {
         display: flex;
         justify-content: space-between;
 
         .surface {
-            width: 150px;
+            width: 200px;
             height: 40px;
-            margin-top: 36px;
-            margin-left: 193px;
+            margin-top: 50px;
+            margin-left: 10%;
             background-image: url(../img/top/surface1.png);
             @extend %bg-pos;
+            background-size: 200px;
         }
 
         .for-athlets {
             font-size: 14px;
-            margin-right: 190px;
+            margin-right: 10%;
             margin-top: 50px;
             color: white;
             line-height: 40px;
@@ -74,31 +78,24 @@ body {
     .top__center {
         margin: 300px auto 0 auto;
 
-        width: 100%;
         font-size: 90px;
         line-height: 90px;
         @extend %font-pn-bold;
         color: white;
         position: relative;
 
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-
         .up-text {
-            width: 70%;
+            width: 900px;
             text-align: left;
             margin: 0 0 0 13%;
+            position: relative;
             z-index: 8;
         }
 
         .down-text {
             position: relative;
-            text-align: left;
-            margin: 0 13% 0 auto;
-            width: 60%;
-            display: flex;
-            justify-content: flex-end;
+            text-align: right;
+            margin-right: 13%;
             z-index: 2;
         }
 
@@ -121,6 +118,7 @@ body {
         position: relative;
         margin-top: 10px;
         padding-right: 13%;
+        z-index: 12;
     }
 
     .top__menu_ul {
@@ -129,7 +127,7 @@ body {
         justify-content: flex-end;
         flex-wrap: wrap;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 20px;
 
         .top__menu__li {
@@ -148,12 +146,12 @@ body {
     .top__soft {
         display: flex;
         justify-content: center;
-        margin-top: 80px;
+        margin-top: 175px;
 
         .button {
             position: relative;
-            margin: 0 3%;
-            width: 312px;
+            margin: 0 20px;
+            width: 320px;
             height: 80px;
             border-radius: 40px/40px;
             background-color: $color-siren;
@@ -213,59 +211,201 @@ body {
             }
         }
     }
-
-
 }
 
 
 /*****************************************************************/
-.row.top {
-    @media screen and (max-width: $screen-medium) {
-        .down-text {
-            width: 230px;
-            margin-right: 3%;
-            text-align: left;
+
+@media screen and (max-width: $screen-medium) {
+    .top {
+        .top__center {
             font-size: 64px;
-            background-color: tomato;
+            margin-top: 170px;
+            line-height: 78px;
+
+            .up-text {
+                width: 500px;
+                margin-left: calc(50% - 280px);
+                margin-right: auto;
+            }
+
+            .down-text {
+                text-align: left;
+                margin: 0 auto 0 calc(50% - 180px);
+                width: 460px;
+            }
+
+            &::before {
+                top: -20px;
+                width: 100%;
+                height: 330px;
+                background-position: 50% 0;
+                z-index: 2;
+            }
+        }
+
+        .top__menu {
+            position: relative;
+            margin-top: 10px;
+            padding: 25px;
+        }
+
+        .top__menu_ul {
+
+            justify-content: space-around;
+
+            .top__menu__li {
+                padding: 0px 24px;
+            }
+
+            .ref {
+                color: $color-siren;
+            }
         }
     }
 }
+
+
+
+/*****************************************************************/
+
+@media screen and (max-width: $screen-small) {
+    .top {
+        .top__upperPart {
+            justify-content: center;
+
+            .surface {
+                width: 150px;
+                height: 32px;
+                margin: 40px 0 0 0;
+                background-size: contain;
+            }
+
+            .for-athlets {
+                display: none;
+            }
+        }
+
+        .top__center {
+            font-size: 32px;
+            margin-top: 130px;
+            line-height: 40px;
+
+            .up-text {
+                width: 240px;
+                margin: 0 0 0 10%;
+                margin-left: calc(50% - 120px);
+                margin-right: auto;
+            }
+
+            .down-text {
+                text-align: left;
+                margin-left: calc(50% - 85px);
+                margin-right: auto;
+                width: 240px;
+            }
+
+            &::before {
+                top: -20px;
+                width: 100%;
+                height: 190px;
+                background-position: 50% 0;
+                z-index: 2;
+            }
+        }
+
+        .top__menu {
+            width: 320px;
+            margin: 0 auto;
+            top: 248px;
+        }
+
+        .top__menu_ul {
+            margin: 0;
+            width: 100%;
+            justify-content: space-around;
+            font-size: 12px;
+            line-height: 16px;
+            font-family: "ProximaNova-Light", Arial, Helvetica, sans-serif;
+            font-weight: 200;
+
+            .top__menu__li {
+                padding: 4px 4px;
+                margin: 0;
+            }
+
+            .top__menu__li:nth-child(4) {
+                padding-left: 30px;
+                padding-right: 0px;
+            }
+
+            .top__menu__li:nth-child(5) {
+                padding-left: 0px;
+                padding-right: 40px;
+            }
+        }
+
+        .top__soft {
+            display: flex;
+            justify-content: center;
+            margin-top: 110px;
+
+            .button {
+                margin: 0 20px;
+                width: 140px;
+                height: 40px;
+                border-radius: 20px/20px;
+                box-shadow: 1px 12px 8px 7px rgba(56, 38, 38, 0.3);
+                border-color: transparent;
+                text-align: left;
+                font-size: 8px;
+            }
+
+            .apple {
+                padding-left: 50px;
+
+                &:before {
+                    left: 18px;
+                    top: 8px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            .google {
+                padding-left: 70px;
+
+                &:before {
+                    left: 30px;
+                    top: 9px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+/**********************************************************************/
 
 @media screen and (max-width: $screen-medium) {
     body {
         background-color: rgb(124, 155, 67);
     }
-
 }
+
 
 @media screen and (max-width: $screen-small) {
     body {
-        background-color: rgb(155, 124, 67);
+        background-color: rgb(195, 124, 67);
     }
+
+
 }
 
-@media screen and (max-width: $screen-small) {
-    .top__menu {
-        width: 320px;
-        margin: 0 auto;
-        top: 190px;
-    }
+.whitty {
+    width: 100%;
+    height: 1500px;
 
-    .top__menu_ul {
-        justify-content: space-around;
-    }
-
-    .top__menu__li {
-        float: none;
-    }
-
-    .top__menu__li:nth-child(4) {
-        padding-left: 30px;
-        padding-right: 0px;
-    }
-
-    .top__menu__li:nth-child(5) {
-        padding-left: 0px;
-        padding-right: 40px;
-    }
 }
