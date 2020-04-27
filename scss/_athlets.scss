@@ -1,0 +1,157 @@
+$color-siren: #5e42b0;
+
+$screen-medium: 1380px;
+$screen-small: 767px;
+
+%font-pn-bold {
+    font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+%font-pn-light {
+    font-family: "ProximaNova-Light", Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+%font-pn-regular {
+    font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+%font-pn-semibold {
+    font-family: "ProximaNova-Semibold", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+%bg-pos {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/***********************************************************************************/
+
+// .partAthlets {
+
+    .cardTypeAthlets {
+        background-color: #fff;
+
+        &__h3 {
+            text-transform: uppercase;
+            font-size: 36px;
+            @extend%font-pn-bold;
+            font-weight: 800;
+            color: #e7e7e7;
+             display: inline-block;
+             vertical-align: top;
+            &__pre{
+                display: inline-block;
+                vertical-align: top;
+                padding-top: 5px;
+                padding-bottom: 6px;
+                margin-right: 10px;
+                border-bottom: solid 4px $color-siren;
+                text-transform: uppercase;
+                font-size: 18px;
+                @extend%font-pn-bold;
+                font-weight: 800;
+                color: black;
+                &_3{
+                    border-bottom: solid 4px white;
+                }
+            }
+        }
+
+        &__text{
+            padding-top: 16px;
+            line-height: 28px;
+            letter-spacing: .9px;
+            &_3{
+                color: white;
+            }
+        }
+
+        &__image {
+            position: absolute;
+            width: 596px;
+            height: 949px;
+            background-image: url('../img/athlets/footballer.png');
+            background-repeat: no-repeat;
+            top: -220px;
+            right: 104%;
+        }
+
+        &__row {
+            display: flex;
+            padding-top: 40px;
+            padding-bottom: 50px;
+            padding-left: 10px;
+            padding-right: 20px;
+
+            &_num_00 {
+                // background-color: tomato;
+                padding-top: 90px;
+                // padding-bottom: 50px;
+                font-size: 90px;
+                @extend%font-pn-bold;
+                font-weight: 800;
+                color: #e7e7e7;
+            }
+
+            &_num_01 {
+                padding-top: 10px;
+                // padding-bottom: 20px;
+            }
+
+            &_num_02 {
+                padding-top: 60px;
+                background-color: #f6f4fa;
+
+            }
+
+            &_num_03 {
+                padding-top: 92px;
+                background-color: #5e42b0;
+                                padding-bottom: 100px;
+            }
+        }
+
+        &__wrapper {
+            width: 50%;
+            position: relative;
+            padding-left: 60px;
+            padding-right: 10%;
+
+        }
+
+        &__text {
+            font-size: 20px;
+        }
+
+        &:nth-child(2n+1) {
+            .cardTypeAthlets__row {
+                justify-content: flex-end;
+            }
+        }
+
+        &:nth-child(2n) {
+            .cardTypeAthlets__row {
+                justify-content: flex-start;
+            }
+        }
+    }
+
+    
+@media screen and (max-width: $screen-medium) {
+    body {
+        background-color: rgb(124, 155, 67);
+    }
+}
+
+
+@media screen and (max-width: $screen-small) {
+    body {
+        background-color: rgb(195, 124, 67);
+    }
+}
+
