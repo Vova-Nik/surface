@@ -1,13 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="145.313" height="179.906" viewBox="0 0 145.313 179.906">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-        stroke: #5d40ad;
-        stroke-width: 4px;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path id="Rectangle_1_копия" data-name="Rectangle 1 копия" class="cls-1" d="M85.553,345.838l138.2-173.409" transform="translate(-83.563 -170.438)"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="145" height="180"><path d="M1.99 175.4L140.19 1.991" fill="none" stroke="#5d40ad" stroke-width="4"/></svg>

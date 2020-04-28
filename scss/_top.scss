@@ -1,6 +1,6 @@
-
-
 $color-siren: #5e42b0;
+$color-siren-light: #9b80ec;
+
 
 $screen-medium: 1380px;
 $screen-small: 767px;
@@ -71,7 +71,7 @@ $screen-small: 767px;
         line-height: 90px;
         @extend %font-pn-bold;
         color: white;
-        // letter-spacing: 5px;
+        letter-spacing: 4px;
 
         .up-text {
             width: 900px;
@@ -84,7 +84,7 @@ $screen-small: 767px;
         .down-text {
             position: relative;
             text-align: right;
-            margin-right: 9%;
+            margin-right: 11%;
             z-index: 2;
         }
 
@@ -128,7 +128,7 @@ $screen-small: 767px;
         }
 
         .ref {
-            color: $color-siren;
+            color: $color-siren-light;
         }
     }
 
@@ -210,6 +210,7 @@ $screen-small: 767px;
         .top__center {
             font-size: 64px;
             margin-top: 170px;
+            margin-bottom: 130px;
             line-height: 78px;
 
             .up-text {
@@ -220,8 +221,10 @@ $screen-small: 767px;
 
             .down-text {
                 text-align: left;
-                margin: 0 auto 0 calc(50% - 180px);
-                width: 460px;
+                width: 510px;
+                margin-left: calc(50% - 180px);
+                margin-right: 0;
+                // width: 460px;
             }
 
             &::before {
@@ -246,15 +249,15 @@ $screen-small: 767px;
             .top__menu__li {
                 padding: 0px 24px;
             }
+        }
 
-            .ref {
-                color: $color-siren;
-            }
+
+        .top__soft {
+            margin-top: 100px;
         }
     }
+
 }
-
-
 
 /*****************************************************************/
 
@@ -277,21 +280,22 @@ $screen-small: 767px;
 
         .top__center {
             font-size: 32px;
+            letter-spacing: 2px;
             margin-top: 130px;
+            margin-bottom: 10px;
             line-height: 40px;
 
             .up-text {
-                width: 240px;
-                margin: 0 0 0 10%;
-                margin-left: calc(50% - 120px);
+               width: 250px;
+                margin-left: calc(50% - 150px);
                 margin-right: auto;
             }
 
             .down-text {
                 text-align: left;
-                margin-left: calc(50% - 85px);
+                margin-left: calc(50% - 100px);
                 margin-right: auto;
-                width: 240px;
+                width: 260px;
             }
 
             &::before {
@@ -306,7 +310,7 @@ $screen-small: 767px;
         .top__menu {
             width: 320px;
             margin: 0 auto;
-            top: 248px;
+            top: 140px;
         }
 
         .top__menu_ul {
@@ -337,10 +341,10 @@ $screen-small: 767px;
         .top__soft {
             display: flex;
             justify-content: center;
-            margin-top: 110px;
+            margin-top: 0px;
 
             .button {
-                margin: 0 20px;
+                margin: 0 5px;
                 width: 140px;
                 height: 40px;
                 border-radius: 20px/20px;

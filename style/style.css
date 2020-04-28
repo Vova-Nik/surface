@@ -1,124 +1,3 @@
-.top .top__center, .cardTypeAthlets__row_num_00, .cardTypeAthlets__h3__pre, .cardTypeAthlets__h3 {
-  font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
-  font-weight: 800;
-}
-
-.top .top__soft .button .btn-txt-1 {
-  font-family: "ProximaNova-Light", Arial, Helvetica, sans-serif;
-  font-weight: 200;
-}
-
-body {
-  font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-}
-
-.top .top__soft .button .btn-txt-2 {
-  font-family: "ProximaNova-Semibold", Arial, Helvetica, sans-serif;
-  font-weight: 600;
-}
-
-.top .top__upperPart .surface, .top .top__soft .apple:before, .top .top__soft .google:before {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-/***********************************************************************************/
-.cardTypeAthlets {
-  background-color: #fff;
-}
-.cardTypeAthlets__h3 {
-  text-transform: uppercase;
-  font-size: 36px;
-  font-weight: 800;
-  color: #e7e7e7;
-  display: inline-block;
-  vertical-align: top;
-}
-.cardTypeAthlets__h3__pre {
-  display: inline-block;
-  vertical-align: top;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  margin-right: 10px;
-  border-bottom: solid 4px #5e42b0;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 800;
-  color: black;
-}
-.cardTypeAthlets__h3__pre_3 {
-  border-bottom: solid 4px white;
-}
-.cardTypeAthlets__text {
-  padding-top: 16px;
-  line-height: 28px;
-  letter-spacing: 0.9px;
-}
-.cardTypeAthlets__text_3 {
-  color: white;
-}
-.cardTypeAthlets__image {
-  position: absolute;
-  width: 596px;
-  height: 949px;
-  background-image: url("../img/athlets/footballer.png");
-  background-repeat: no-repeat;
-  top: -220px;
-  right: 104%;
-}
-.cardTypeAthlets__row {
-  display: flex;
-  padding-top: 40px;
-  padding-bottom: 50px;
-  padding-left: 10px;
-  padding-right: 20px;
-}
-.cardTypeAthlets__row_num_00 {
-  padding-top: 90px;
-  font-size: 90px;
-  font-weight: 800;
-  color: #e7e7e7;
-}
-.cardTypeAthlets__row_num_01 {
-  padding-top: 10px;
-}
-.cardTypeAthlets__row_num_02 {
-  padding-top: 60px;
-  background-color: #f6f4fa;
-}
-.cardTypeAthlets__row_num_03 {
-  padding-top: 92px;
-  background-color: #5e42b0;
-  padding-bottom: 100px;
-}
-.cardTypeAthlets__wrapper {
-  width: 50%;
-  position: relative;
-  padding-left: 60px;
-  padding-right: 10%;
-}
-.cardTypeAthlets__text {
-  font-size: 20px;
-}
-.cardTypeAthlets:nth-child(2n+1) .cardTypeAthlets__row {
-  justify-content: flex-end;
-}
-.cardTypeAthlets:nth-child(2n) .cardTypeAthlets__row {
-  justify-content: flex-start;
-}
-
-@media screen and (max-width: 1380px) {
-  body {
-    background-color: #7c9b43;
-  }
-}
-@media screen and (max-width: 767px) {
-  body {
-    background-color: #c37c43;
-  }
-}
 .top .top__center {
   font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
   font-weight: 800;
@@ -145,18 +24,6 @@ body {
   background-size: contain;
 }
 
-/*****************************************************************************/
-body {
-  background-color: wheat;
-}
-
-.container {
-  max-width: 1920px;
-  min-width: 320px;
-  margin: 0 auto;
-}
-
-/****************************************************************************/
 .top {
   width: 100%;
   background-image: url(../img/top/1200/football.jpg);
@@ -191,6 +58,7 @@ body {
   font-size: 90px;
   line-height: 90px;
   color: white;
+  letter-spacing: 4px;
 }
 .top .top__center .up-text {
   width: 900px;
@@ -202,7 +70,7 @@ body {
 .top .top__center .down-text {
   position: relative;
   text-align: right;
-  margin-right: 9%;
+  margin-right: 11%;
   z-index: 2;
 }
 .top .top__center::before {
@@ -239,7 +107,7 @@ body {
   padding-right: 0;
 }
 .top .top__menu_ul .ref {
-  color: #5e42b0;
+  color: #9b80ec;
 }
 .top .top__soft {
   display: flex;
@@ -298,6 +166,7 @@ body {
   .top .top__center {
     font-size: 64px;
     margin-top: 170px;
+    margin-bottom: 130px;
     line-height: 78px;
   }
   .top .top__center .up-text {
@@ -307,8 +176,9 @@ body {
   }
   .top .top__center .down-text {
     text-align: left;
-    margin: 0 auto 0 calc(50% - 180px);
-    width: 460px;
+    width: 510px;
+    margin-left: calc(50% - 180px);
+    margin-right: 0;
   }
   .top .top__center::before {
     top: -20px;
@@ -328,8 +198,8 @@ body {
   .top .top__menu_ul .top__menu__li {
     padding: 0px 24px;
   }
-  .top .top__menu_ul .ref {
-    color: #5e42b0;
+  .top .top__soft {
+    margin-top: 100px;
   }
 }
 /*****************************************************************/
@@ -348,20 +218,21 @@ body {
   }
   .top .top__center {
     font-size: 32px;
+    letter-spacing: 2px;
     margin-top: 130px;
+    margin-bottom: 10px;
     line-height: 40px;
   }
   .top .top__center .up-text {
-    width: 240px;
-    margin: 0 0 0 10%;
-    margin-left: calc(50% - 120px);
+    width: 250px;
+    margin-left: calc(50% - 150px);
     margin-right: auto;
   }
   .top .top__center .down-text {
     text-align: left;
-    margin-left: calc(50% - 85px);
+    margin-left: calc(50% - 100px);
     margin-right: auto;
-    width: 240px;
+    width: 260px;
   }
   .top .top__center::before {
     top: -20px;
@@ -373,7 +244,7 @@ body {
   .top .top__menu {
     width: 320px;
     margin: 0 auto;
-    top: 248px;
+    top: 140px;
   }
   .top .top__menu_ul {
     margin: 0;
@@ -399,10 +270,10 @@ body {
   .top .top__soft {
     display: flex;
     justify-content: center;
-    margin-top: 110px;
+    margin-top: 0px;
   }
   .top .top__soft .button {
-    margin: 0 20px;
+    margin: 0 5px;
     width: 140px;
     height: 40px;
     border-radius: 20px/20px;
@@ -431,6 +302,215 @@ body {
   }
 }
 /**********************************************************************/
+.cardTypeAthlets__row_num_00, .cardTypeAthlets__h3__pre, .cardTypeAthlets__h3 {
+  font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+
+body {
+  font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+/***********************************************************************************/
+.partAthlets {
+  overflow: hidden;
+}
+
+.cardTypeAthlets {
+  background-color: #fff;
+}
+.cardTypeAthlets__container {
+  display: flex;
+  max-width: 76%;
+  margin: 0 auto;
+  padding-left: 2px;
+}
+.cardTypeAthlets__h3 {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 52px;
+  font-weight: 800;
+  color: #e7e7e7;
+  display: inline-block;
+  vertical-align: top;
+}
+.cardTypeAthlets__h3__pre {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  margin-right: 10px;
+  border-bottom: solid 4px #5e42b0;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 800;
+  color: black;
+}
+.cardTypeAthlets__h3__pre_3 {
+  border-bottom: solid 4px white;
+}
+.cardTypeAthlets__wrapper {
+  width: 50%;
+  position: relative;
+  padding-left: 60px;
+}
+.cardTypeAthlets__text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.9px;
+}
+.cardTypeAthlets__text_3 {
+  color: white;
+}
+.cardTypeAthlets__image {
+  position: absolute;
+  width: 596px;
+  height: 949px;
+  background-repeat: no-repeat;
+}
+.cardTypeAthlets__addons {
+  width: 100%;
+  height: 100%;
+}
+.cardTypeAthlets__row_num_00 {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  font-size: 90px;
+  line-height: 180px;
+  font-weight: 800;
+  color: #e7e7e7;
+  text-transform: uppercase;
+}
+.cardTypeAthlets__row_num_01 {
+  padding-top: 15px;
+  padding-bottom: 45px;
+}
+.cardTypeAthlets__row_num_02 {
+  padding-top: 54px;
+  padding-bottom: 50px;
+  background-color: #f6f4fa;
+}
+.cardTypeAthlets__row_num_03 {
+  padding-top: 80px;
+  padding-bottom: 90px;
+  background-color: #5e42b0;
+}
+
+.cardTypeAthlets_n_1 .cardTypeAthlets__container {
+  justify-content: flex-end;
+}
+.cardTypeAthlets_n_1 .cardTypeAthlets__image {
+  background-image: url("../img/athlets/footballer1.gif");
+  top: -220px;
+  right: 104%;
+  background-size: contain;
+}
+.cardTypeAthlets_n_2 .cardTypeAthlets__row {
+  justify-content: flex-start;
+}
+.cardTypeAthlets_n_2 .cardTypeAthlets__wrapper {
+  padding-left: 90px;
+}
+.cardTypeAthlets_n_2 .cardTypeAthlets__image {
+  background-image: url("../img/athlets/footballer2.gif");
+  top: -290px;
+  left: 80%;
+  width: 991px;
+  height: 815;
+  background-size: contain;
+}
+.cardTypeAthlets_n_2 .cardTypeAthlets__row_num_02 {
+  padding-top: 64px;
+  padding-bottom: 60px;
+  background-color: #f6f4fa;
+}
+.cardTypeAthlets_n_2 .cardTypeAthlets__row_num_03 {
+  padding-top: 90px;
+  padding-bottom: 86px;
+  background-color: #5e42b0;
+}
+
+@media screen and (max-width: 1380px) {
+  body {
+    background-color: #7c9b43;
+  }
+
+  .cardTypeAthlets__container {
+    max-width: 90%;
+    padding-left: 0;
+  }
+
+  .cardTypeAthlets__text {
+    font-size: 18px;
+  }
+
+  .cardTypeAthlets__wrapper {
+    width: 64%;
+  }
+
+  .cardTypeAthlets__container {
+    padding-left: 0px;
+  }
+
+  .cardTypeAthlets__row_num_00 {
+    line-height: 140px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  .cardTypeAthlets__row_num_01 {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  .cardTypeAthlets__row_num_02 {
+    padding-top: 40px;
+    padding-bottom: 35px;
+    background-color: #f6f4fa;
+  }
+  .cardTypeAthlets__row_num_03 {
+    padding-top: 55px;
+    padding-bottom: 60px;
+    background-color: #5e42b0;
+  }
+
+  .cardTypeAthlets_n_1 .cardTypeAthlets__image {
+    left: -480px;
+    top: -120px;
+    height: 750px;
+  }
+  .cardTypeAthlets_n_2 .cardTypeAthlets__image {
+    top: -150px;
+    left: 70%;
+    height: 540px;
+  }
+  .cardTypeAthlets_n_2 .cardTypeAthlets__wrapper {
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    background-color: #c37c43;
+  }
+}
+body {
+  font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+/*****************************************************************************/
+body {
+  background-color: wheat;
+}
+
+.container {
+  max-width: 1920px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+/****************************************************************************/
 .whitty {
   width: 100%;
   height: 1500px;

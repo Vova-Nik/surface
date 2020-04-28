@@ -1,4 +1,5 @@
 $color-siren: #5e42b0;
+$color-siren-light: #9b80ec;
 
 $screen-medium: 1380px;
 $screen-small: 767px;
@@ -31,120 +32,249 @@ $screen-small: 767px;
 
 /***********************************************************************************/
 
-// .partAthlets {
+.partAthlets {
+    overflow: hidden;
+}
 
-    .cardTypeAthlets {
-        background-color: #fff;
 
-        &__h3 {
+.cardTypeAthlets {
+    background-color: #fff;
+
+    &__container {
+        display: flex;
+        max-width: 76%;
+        margin: 0 auto;
+        padding-left: 2px;
+    }
+
+    &__h3 {
+        text-transform: uppercase;
+        font-size: 36px;
+        line-height: 52px;
+        @extend%font-pn-bold;
+        font-weight: 800;
+        color: #e7e7e7;
+        display: inline-block;
+        vertical-align: top;
+
+        &__pre {
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 5px;
+            padding-bottom: 6px;
+            margin-right: 10px;
+            border-bottom: solid 4px $color-siren;
             text-transform: uppercase;
-            font-size: 36px;
+            font-size: 18px;
             @extend%font-pn-bold;
             font-weight: 800;
-            color: #e7e7e7;
-             display: inline-block;
-             vertical-align: top;
-            &__pre{
-                display: inline-block;
-                vertical-align: top;
-                padding-top: 5px;
-                padding-bottom: 6px;
-                margin-right: 10px;
-                border-bottom: solid 4px $color-siren;
-                text-transform: uppercase;
-                font-size: 18px;
-                @extend%font-pn-bold;
-                font-weight: 800;
-                color: black;
-                &_3{
-                    border-bottom: solid 4px white;
-                }
-            }
-        }
+            color: black;
 
-        &__text{
-            padding-top: 16px;
-            line-height: 28px;
-            letter-spacing: .9px;
-            &_3{
-                color: white;
-            }
-        }
-
-        &__image {
-            position: absolute;
-            width: 596px;
-            height: 949px;
-            background-image: url('../img/athlets/footballer.png');
-            background-repeat: no-repeat;
-            top: -220px;
-            right: 104%;
-        }
-
-        &__row {
-            display: flex;
-            padding-top: 40px;
-            padding-bottom: 50px;
-            padding-left: 10px;
-            padding-right: 20px;
-
-            &_num_00 {
-                // background-color: tomato;
-                padding-top: 90px;
-                // padding-bottom: 50px;
-                font-size: 90px;
-                @extend%font-pn-bold;
-                font-weight: 800;
-                color: #e7e7e7;
-            }
-
-            &_num_01 {
-                padding-top: 10px;
-                // padding-bottom: 20px;
-            }
-
-            &_num_02 {
-                padding-top: 60px;
-                background-color: #f6f4fa;
-
-            }
-
-            &_num_03 {
-                padding-top: 92px;
-                background-color: #5e42b0;
-                                padding-bottom: 100px;
-            }
-        }
-
-        &__wrapper {
-            width: 50%;
-            position: relative;
-            padding-left: 60px;
-            padding-right: 10%;
-
-        }
-
-        &__text {
-            font-size: 20px;
-        }
-
-        &:nth-child(2n+1) {
-            .cardTypeAthlets__row {
-                justify-content: flex-end;
-            }
-        }
-
-        &:nth-child(2n) {
-            .cardTypeAthlets__row {
-                justify-content: flex-start;
+            &_3 {
+                border-bottom: solid 4px white;
             }
         }
     }
 
-    
+    &__wrapper {
+        width: 50%;
+        position: relative;
+        padding-left: 60px;
+    }
+
+    &__text {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+        line-height: 1.4;
+        letter-spacing: .9px;
+
+        &_3 {
+            color: white;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        width: 596px;
+        height: 949px;
+        background-repeat: no-repeat;
+    }
+
+    &__addons {
+        width: 100%;
+        height: 100%;
+        // background-color: tomato;
+    }
+
+    &__row {
+        &_num_00 {
+            padding-top: 50px;
+            padding-bottom: 10px;
+            font-size: 90px;
+            line-height: 180px;
+            @extend%font-pn-bold;
+            font-weight: 800;
+            color: #e7e7e7;
+            text-transform: uppercase;
+        }
+
+        &_num_01 {
+            padding-top: 15px;
+            padding-bottom: 45px;
+        }
+
+        &_num_02 {
+            padding-top: 54px;
+            padding-bottom: 50px;
+            background-color: #f6f4fa;
+        }
+
+        &_num_03 {
+            padding-top: 80px;
+            padding-bottom: 90px;
+            background-color: #5e42b0;
+        }
+    }
+}
+
+.cardTypeAthlets_n {
+    &_1 {
+        .cardTypeAthlets__container {
+            justify-content: flex-end;
+        }
+
+        .cardTypeAthlets__image {
+            background-image: url('../img/athlets/footballer1.gif');
+            top: -220px;
+            right: 104%;
+            background-size: contain;
+        }
+
+
+        //     &__addon{
+
+        //         &_1{
+
+        //         }
+        //         &_2{
+
+        //         }
+        //         &_3{
+
+        //         }
+        //         &_4{
+
+        //         }
+        //         &_5{
+
+        //         }
+        //     }
+        // }
+    }
+
+    &_2 {
+        .cardTypeAthlets__row {
+            justify-content: flex-start;
+        }
+
+        .cardTypeAthlets__wrapper {
+            padding-left: 90px;
+        }
+
+        .cardTypeAthlets__image {
+            background-image: url('../img/athlets/footballer2.gif');
+            top: -290px;
+            left: 80%;
+            width: 991px;
+            height: 815;
+            background-size: contain;
+        }
+
+        .cardTypeAthlets__row {
+            &_num_02 {
+                padding-top: 64px;
+                padding-bottom: 60px;
+                background-color: #f6f4fa;
+            }
+
+            &_num_03 {
+                padding-top: 90px;
+                padding-bottom: 86px;
+                background-color: #5e42b0;
+            }
+        }
+    }
+
+}
+
 @media screen and (max-width: $screen-medium) {
     body {
         background-color: rgb(124, 155, 67);
+    }
+
+    .cardTypeAthlets__container {
+        max-width: 90%;
+        padding-left: 0;
+    }
+
+    .cardTypeAthlets__text {
+        font-size: 18px;
+    }
+
+    .cardTypeAthlets__wrapper {
+        width: 64%;
+    }
+
+    .cardTypeAthlets__container {
+        padding-left: 0px;
+    }
+
+    .cardTypeAthlets__row {
+        &_num_00 {
+            line-height: 140px;
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+
+        &_num_01 {
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+
+        &_num_02 {
+            padding-top: 40px;
+            padding-bottom: 35px;
+            background-color: #f6f4fa;
+        }
+
+        &_num_03 {
+            padding-top: 55px;
+            padding-bottom: 60px;
+            background-color: #5e42b0;
+        }
+    }
+
+    .cardTypeAthlets_n {
+        &_1 {
+            .cardTypeAthlets__image {
+                left: -480px;
+                top: -120px;
+                height: 750px;
+            }
+        }
+
+        &_2 {
+            .cardTypeAthlets__image {
+                top: -150px;
+                left: 70%;
+                height: 540px;
+            }
+
+            .cardTypeAthlets__wrapper {
+                padding-left: 10px;
+            }
+        }
     }
 }
 
@@ -154,4 +284,3 @@ $screen-small: 767px;
         background-color: rgb(195, 124, 67);
     }
 }
-
