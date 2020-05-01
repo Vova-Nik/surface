@@ -1,0 +1,163 @@
+$color-active: #5c3caf;
+$color-passive: #d8d8d8;
+
+
+
+@keyframes animBlock1 {
+    0% {
+        visibility: visible;
+    }
+
+    32% {
+        visibility: visible;
+    }
+
+    33% {
+        visibility: hidden;
+    }
+
+    65% {
+        visibility: hidden;
+    }
+
+    66% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes animBlock2 {
+    0% {
+        visibility: hidden;
+    }
+
+    32% {
+        visibility: hidden;
+    }
+
+    33% {
+        visibility: visible;
+    }
+
+    65% {
+        visibility: visible;
+    }
+
+    66% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes animBlock3 {
+    0% {
+        visibility: hidden;
+    }
+
+    32% {
+        visibility: hidden;
+    }
+
+    33% {
+        visibility: hidden;
+    }
+
+    65% {
+        visibility: hidden;
+    }
+
+    66% {
+        visibility: visible;
+    }
+
+    100% {
+        visibility: visible;
+    }
+}
+
+/********************************************************************/
+
+
+@keyframes animDot1 {
+    0% {
+        background-color: $color-active;
+    }
+
+    32% {
+        background-color: $color-active;
+    }
+
+    33% {
+        background-color: $color-passive;
+    }
+
+    65% {
+        background-color: $color-passive;
+    }
+
+    66% {
+        background-color: $color-passive;
+    }
+
+    100% {
+        background-color: $color-passive;
+    }
+}
+
+@keyframes animDot2 {
+    0% {
+        background-color: $color-passive;
+    }
+
+    32% {
+        background-color: $color-passive;
+    }
+
+    33% {
+        background-color: $color-active;
+    }
+
+    65% {
+        background-color: $color-active;
+    }
+
+    66% {
+        background-color: $color-passive;
+    }
+
+    100% {
+        background-color: $color-passive;
+    }
+}
+
+@keyframes animDot3 {
+    0% {
+        background-color: $color-passive;
+    }
+
+    32% {
+        background-color: $color-passive;
+    }
+
+    33% {
+        background-color: $color-passive;
+    }
+
+    65% {
+        background-color: $color-passive;
+    }
+
+    66% {
+        background-color: $color-active;
+    }
+
+    100% {
+        background-color: $color-active;
+    }
+}

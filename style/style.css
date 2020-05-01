@@ -330,7 +330,7 @@ body {
   font-size: 36px;
   line-height: 52px;
   font-weight: 800;
-  color: #e7e7e7;
+  color: #c1c1c1;
   display: inline-block;
   vertical-align: top;
 }
@@ -346,14 +346,14 @@ body {
   font-weight: 800;
   color: black;
 }
-.cardTypeAthlets .cardTypeAthlets_n_1 .cardTypeAthlets__h3__pre_3 {
+.cardTypeAthlets_n_1 .cardTypeAthlets__h3__pre_3 {
   color: black;
-  color: tomato;
   border-bottom: solid 4px #c1c1c1;
+  border-bottom: solid 4px #efefef;
 }
-.cardTypeAthlets .cardTypeAthlets_n_2 .cardTypeAthlets__h3__pre_3 {
+.cardTypeAthlets_n_2 .cardTypeAthlets__h3__pre_3 {
   color: #8765dd;
-  border-bottom: solid 4px #090c35;
+  border-bottom: solid 4px #fff;
 }
 .cardTypeAthlets__wrapper {
   width: 50%;
@@ -549,23 +549,30 @@ body {
 }
 /**************************************************************************************/
 @media screen and (max-width: 767px) {
+  .partAthlets .cardTypeAthlets {
+    position: relative;
+    height: 600px;
+  }
+  .partAthlets .cardTypeAthlets__imgHolder {
+    position: absolute;
+    z-index: 4;
+    visibility: visible;
+  }
   .partAthlets .cardTypeAthlets__container {
-    max-width: 100%;
     width: 100%;
     padding-left: 0;
     padding-right: 0;
-    flex-direction: column;
+    display: block;
   }
   .partAthlets .cardTypeAthlets__text {
     font-size: 15px;
+    color: black;
+    height: 105px;
+    overflow: hidden;
   }
   .partAthlets .cardTypeAthlets__h3 {
     font-size: 28px;
     line-height: 42px;
-  }
-  .partAthlets .cardTypeAthlets .cardTypeAthlets__row {
-    padding-left: 0;
-    padding-right: 0;
   }
   .partAthlets .cardTypeAthlets__wrapper {
     width: 100%;
@@ -576,7 +583,6 @@ body {
   .partAthlets .cardTypeAthlets__imgHolder {
     width: 100%;
     height: 240px;
-    margin: 0 auto;
     min-width: 200px;
   }
   .partAthlets .cardTypeAthlets__row_num_00 {
@@ -584,14 +590,45 @@ body {
     line-height: 60px;
     padding-top: 20px;
     padding-bottom: 0px;
+    color: #e7e7e7;
+    background-color: #fff;
+    height: 310px;
   }
   .partAthlets .cardTypeAthlets__row_num_01 {
-    display: none;
+    width: 100%;
+    height: 230px;
+    position: absolute;
+    bottom: 0;
+    padding-top: 80px;
+    padding-bottom: 0;
+    background-color: #f5f4f9;
+    animation-name: animBlock1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
   }
   .partAthlets .cardTypeAthlets__row_num_02 {
-    padding-top: 10px;
+    height: 230px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding-top: 80px;
     padding-bottom: 0;
-    background-color: #fff;
+    background-color: #f5f4f9;
+    animation-name: animBlock2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  .partAthlets .cardTypeAthlets__row_num_03 {
+    height: 230px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding-top: 80px;
+    padding-bottom: 0;
+    background-color: #f5f4f9;
+    animation-name: animBlock3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
   }
   .partAthlets .cardTypeAthlets__dots {
     width: 100%;
@@ -599,6 +636,7 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    padding-top: 10px;
     padding-bottom: 25px;
     background-color: #f5f4f9;
   }
@@ -609,6 +647,21 @@ body {
     border-radius: 50%;
     margin: auto 5px;
   }
+  .partAthlets .cardTypeAthlets__dots_dot_1 {
+    animation-name: animDot1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  .partAthlets .cardTypeAthlets__dots_dot_2 {
+    animation-name: animDot2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  .partAthlets .cardTypeAthlets__dots_dot_3 {
+    animation-name: animDot3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
   .partAthlets .cardTypeAthlets_n_1 .cardTypeAthlets__row_num_02 .cardTypeAthlets__wrapper {
     background-color: #f5f4f9;
   }
@@ -616,7 +669,7 @@ body {
     width: 100%;
     height: 100%;
     left: 0;
-    top: 0;
+    top: -320px;
     height: 300px;
     background-position: center;
   }
@@ -624,19 +677,10 @@ body {
     left: calc(50% - 110px);
     top: 6%;
   }
-  .partAthlets .cardTypeAthlets_n_1 .cardTypeAthlets__row_num_02 .cardTypeAthlets__wrapper {
-    padding-top: 75px;
-  }
-  .partAthlets .cardTypeAthlets_n_1 .cardTypeAthlets__row_num_03 {
-    display: none;
-  }
-  .partAthlets .cardTypeAthlets_n_1 .cardTypeAthlets__dots_dot_2 {
-    background-color: #9b80ec;
-  }
   .partAthlets .cardTypeAthlets_n_2 .cardTypeAthlets__image {
     width: 100%;
     left: 0;
-    top: 0;
+    top: -345px;
     height: 300px;
     background-position: center;
   }
@@ -644,40 +688,126 @@ body {
     left: calc(50% - 110px);
     top: 6%;
   }
-  .partAthlets .cardTypeAthlets_n_2 .cardTypeAthlets__row_num_02 {
-    padding-top: 0px;
-    padding-bottom: 0px;
+}
+@keyframes animBlock1 {
+  0% {
+    visibility: visible;
   }
-  .partAthlets .cardTypeAthlets_n_2 .cardTypeAthlets__row_num_02 .cardTypeAthlets__text {
-    font-size: 1px;
-    line-height: 1;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    color: transparent;
-    background: transparent;
+  32% {
+    visibility: visible;
   }
-  .partAthlets .cardTypeAthlets_n_2 .cardTypeAthlets__row_num_02 .cardTypeAthlets__h3__pre {
-    display: none;
+  33% {
+    visibility: hidden;
   }
-  .partAthlets .cardTypeAthlets_n_2 .cardTypeAthlets__row_num_02 .cardTypeAthlets__h3 {
-    display: none;
+  65% {
+    visibility: hidden;
   }
-  .partAthlets .cardTypeAthlets_n_2 .cardTypeAthlets__row_num_03 {
-    padding-top: 80px;
-    padding-bottom: 20px;
-    background: #f5f4f9;
+  66% {
+    visibility: hidden;
   }
-  .partAthlets .cardTypeAthlets_n_2 .cardTypeAthlets__row_num_03 .cardTypeAthlets__h3 {
-    color: #e7e7e7;
+  100% {
+    visibility: hidden;
   }
-  .partAthlets .cardTypeAthlets_n_2 .cardTypeAthlets__row_num_03 .cardTypeAthlets__text {
-    color: black;
+}
+@keyframes animBlock2 {
+  0% {
+    visibility: hidden;
   }
-  .partAthlets .cardTypeAthlets_n_2 .cardTypeAthlets__row_num_03 .cardTypeAthlets__h3__pre {
-    border-bottom: solid 4px #5e42b0;
+  32% {
+    visibility: hidden;
   }
-  .partAthlets .cardTypeAthlets_n_2 .cardTypeAthlets__dots_dot_3 {
-    background-color: #9b80ec;
+  33% {
+    visibility: visible;
+  }
+  65% {
+    visibility: visible;
+  }
+  66% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes animBlock3 {
+  0% {
+    visibility: hidden;
+  }
+  32% {
+    visibility: hidden;
+  }
+  33% {
+    visibility: hidden;
+  }
+  65% {
+    visibility: hidden;
+  }
+  66% {
+    visibility: visible;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+/********************************************************************/
+@keyframes animDot1 {
+  0% {
+    background-color: #5c3caf;
+  }
+  32% {
+    background-color: #5c3caf;
+  }
+  33% {
+    background-color: #d8d8d8;
+  }
+  65% {
+    background-color: #d8d8d8;
+  }
+  66% {
+    background-color: #d8d8d8;
+  }
+  100% {
+    background-color: #d8d8d8;
+  }
+}
+@keyframes animDot2 {
+  0% {
+    background-color: #d8d8d8;
+  }
+  32% {
+    background-color: #d8d8d8;
+  }
+  33% {
+    background-color: #5c3caf;
+  }
+  65% {
+    background-color: #5c3caf;
+  }
+  66% {
+    background-color: #d8d8d8;
+  }
+  100% {
+    background-color: #d8d8d8;
+  }
+}
+@keyframes animDot3 {
+  0% {
+    background-color: #d8d8d8;
+  }
+  32% {
+    background-color: #d8d8d8;
+  }
+  33% {
+    background-color: #d8d8d8;
+  }
+  65% {
+    background-color: #d8d8d8;
+  }
+  66% {
+    background-color: #5c3caf;
+  }
+  100% {
+    background-color: #5c3caf;
   }
 }
 body {

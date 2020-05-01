@@ -1,5 +1,6 @@
 @use 'top';
 @use 'athlets';
+@use 'animation';
 
 
 $color-siren: #5e42b0;
@@ -47,21 +48,6 @@ body {
 }
 
 /****************************************************************************/
-
-
-
-// @media screen and (max-width: $screen-medium) {
-//     body {
-//         background-color: rgb(124, 155, 67);
-//     }
-// }
-
-
-// @media screen and (max-width: $screen-small) {
-//     body {
-//         background-color: rgb(195, 124, 67);
-//     }
-// }
 
 .whitty {
     width: 100%;
