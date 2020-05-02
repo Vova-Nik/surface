@@ -274,6 +274,7 @@ $screen-small: 767px;
 
         &__text {
             font-size: 18px;
+            letter-spacing: 0;
         }
 
         &__row {
@@ -284,19 +285,16 @@ $screen-small: 767px;
             }
 
             &_num_01 {
-                //   bottom: 0px;
                 padding-top: 10px;
                 padding-bottom: 10px;
             }
 
             &_num_02 {
-                //   bottom: 0px;
                 padding-top: 40px;
-                padding-bottom: 35px; //--------------------
+                padding-bottom: 35px;
             }
 
             &_num_03 {
-                //  bottom: 0px;
                 padding-top: 30px;
                 padding-bottom: 30px;
                 background-color: #5e42b0;
@@ -318,8 +316,9 @@ $screen-small: 767px;
             }
 
             &__image {
-                left: -200px;
-                top: -420px;
+                background-image: url('../img/athlets/addon1_768.svg');
+                left: -220px;
+                top: -400px;
                 width: 460px;
             }
 
@@ -342,8 +341,9 @@ $screen-small: 767px;
             }
 
             &__image {
-                top: -350px;
-                left: -280px;
+                background-image: url('../img/athlets/addon2_768.svg');
+                top: -370px;
+                left: -270px;
                 height: 540px;
             }
 
@@ -367,12 +367,15 @@ $screen-small: 767px;
         .cardTypeAthlets {
 
             position: relative;
-            height: 600px;
+            height: 650px;
 
             &__imgHolder {
                 position: absolute;
                 z-index: 4;
                 visibility: visible;
+                width: 100%;
+                height: 240px;
+                min-width: 200px;
             }
 
             &__container {
@@ -384,9 +387,11 @@ $screen-small: 767px;
 
             &__text {
                 font-size: 15px;
+                letter-spacing: 0;
                 color: black;
-                    height: 105px;
-                   overflow: hidden;
+                height: 120px;
+                padding: 0;
+                overflow: hidden;
             }
 
             &__h3 {
@@ -396,33 +401,30 @@ $screen-small: 767px;
 
             &__wrapper {
                 width: 100%;
-                min-width: 200px;
-                padding-left: 6%;
-                padding-right: 6%;
-
+                min-width: 300px;
+                padding-left: 3%;
+                padding-right: 3%;
             }
 
-            &__imgHolder {
-                width: 100%;
-                height: 240px;
-                min-width: 200px;
+            &__h3__pre{
+                padding-bottom: 0;
+                border-bottom: 4px solid #5e42b0;
             }
 
             &__row {
-                // overflow: hidden;
                 &_num_00 {
-                    font-size: 50px;
-                    line-height: 60px;
+                    height: 310px;
                     padding-top: 20px;
                     padding-bottom: 0px;
+                    font-size: 50px;
+                    line-height: 60px;
                     color: #e7e7e7;
                     background-color: #fff;
-                    height: 310px;
                 }
 
                 &_num_01 {
                     width: 100%;
-                    height: 230px;
+                    height: 260px;
                     position: absolute;
                     bottom: 0;
                     padding-top: 80px;
@@ -434,8 +436,8 @@ $screen-small: 767px;
                 }
 
                 &_num_02 {
-                    height: 230px;
                     width: 100%;
+                    height: 260px;
                     position: absolute;
                     bottom: 0;
                     padding-top: 80px;
@@ -447,8 +449,8 @@ $screen-small: 767px;
                 }
 
                 &_num_03 {
-                    height: 230px;
                     width: 100%;
+                    height: 260px;
                     position: absolute;
                     bottom: 0;
                     padding-top: 80px;
@@ -509,6 +511,7 @@ $screen-small: 767px;
             .cardTypeAthlets {
 
                 &__image {
+                    background-image: url('../img/athlets/addon1_320.svg');
                     width: 100%;
                     height: 100%;
                     left: 0;
@@ -528,6 +531,7 @@ $screen-small: 767px;
             .cardTypeAthlets {
 
                 &__image {
+                    background-image: url('../img/athlets/addon2_320.svg');
                     width: 100%;
                     left: 0;
                     top: -345px;

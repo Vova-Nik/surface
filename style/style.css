@@ -489,6 +489,7 @@ body {
   }
   .cardTypeAthlets__text {
     font-size: 18px;
+    letter-spacing: 0;
   }
   .cardTypeAthlets__row_num_00 {
     line-height: 140px;
@@ -518,8 +519,9 @@ body {
     width: 36%;
   }
   .cardTypeAthlets_n_1 .cardTypeAthlets__image {
-    left: -200px;
-    top: -420px;
+    background-image: url("../img/athlets/addon1_768.svg");
+    left: -220px;
+    top: -400px;
     width: 460px;
   }
   .cardTypeAthlets_n_1 .cardTypeAthlets__addon_2 {
@@ -535,8 +537,9 @@ body {
     width: 40%;
   }
   .cardTypeAthlets_n_2 .cardTypeAthlets__image {
-    top: -350px;
-    left: -280px;
+    background-image: url("../img/athlets/addon2_768.svg");
+    top: -370px;
+    left: -270px;
     height: 540px;
   }
   .cardTypeAthlets_n_2 .cardTypeAthlets__addon_2 {
@@ -551,12 +554,15 @@ body {
 @media screen and (max-width: 767px) {
   .partAthlets .cardTypeAthlets {
     position: relative;
-    height: 600px;
+    height: 650px;
   }
   .partAthlets .cardTypeAthlets__imgHolder {
     position: absolute;
     z-index: 4;
     visibility: visible;
+    width: 100%;
+    height: 240px;
+    min-width: 200px;
   }
   .partAthlets .cardTypeAthlets__container {
     width: 100%;
@@ -566,8 +572,10 @@ body {
   }
   .partAthlets .cardTypeAthlets__text {
     font-size: 15px;
+    letter-spacing: 0;
     color: black;
-    height: 105px;
+    height: 120px;
+    padding: 0;
     overflow: hidden;
   }
   .partAthlets .cardTypeAthlets__h3 {
@@ -576,27 +584,26 @@ body {
   }
   .partAthlets .cardTypeAthlets__wrapper {
     width: 100%;
-    min-width: 200px;
-    padding-left: 6%;
-    padding-right: 6%;
+    min-width: 300px;
+    padding-left: 3%;
+    padding-right: 3%;
   }
-  .partAthlets .cardTypeAthlets__imgHolder {
-    width: 100%;
-    height: 240px;
-    min-width: 200px;
+  .partAthlets .cardTypeAthlets__h3__pre {
+    padding-bottom: 0;
+    border-bottom: 4px solid #5e42b0;
   }
   .partAthlets .cardTypeAthlets__row_num_00 {
-    font-size: 50px;
-    line-height: 60px;
+    height: 310px;
     padding-top: 20px;
     padding-bottom: 0px;
+    font-size: 50px;
+    line-height: 60px;
     color: #e7e7e7;
     background-color: #fff;
-    height: 310px;
   }
   .partAthlets .cardTypeAthlets__row_num_01 {
     width: 100%;
-    height: 230px;
+    height: 260px;
     position: absolute;
     bottom: 0;
     padding-top: 80px;
@@ -607,8 +614,8 @@ body {
     animation-iteration-count: infinite;
   }
   .partAthlets .cardTypeAthlets__row_num_02 {
-    height: 230px;
     width: 100%;
+    height: 260px;
     position: absolute;
     bottom: 0;
     padding-top: 80px;
@@ -619,8 +626,8 @@ body {
     animation-iteration-count: infinite;
   }
   .partAthlets .cardTypeAthlets__row_num_03 {
-    height: 230px;
     width: 100%;
+    height: 260px;
     position: absolute;
     bottom: 0;
     padding-top: 80px;
@@ -666,6 +673,7 @@ body {
     background-color: #f5f4f9;
   }
   .partAthlets .cardTypeAthlets_n_1 .cardTypeAthlets__image {
+    background-image: url("../img/athlets/addon1_320.svg");
     width: 100%;
     height: 100%;
     left: 0;
@@ -678,6 +686,7 @@ body {
     top: 6%;
   }
   .partAthlets .cardTypeAthlets_n_2 .cardTypeAthlets__image {
+    background-image: url("../img/athlets/addon2_320.svg");
     width: 100%;
     left: 0;
     top: -345px;
@@ -818,6 +827,10 @@ body {
 /*****************************************************************************/
 body {
   background-color: wheat;
+}
+
+body * {
+  box-sizing: border-box;
 }
 
 .container {

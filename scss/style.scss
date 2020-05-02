@@ -41,6 +41,11 @@ body {
     @extend %font-pn-regular;
 }
 
+body
+* {
+    box-sizing: border-box;
+}
+
 .container {
     max-width: 1920px;
     min-width: 320px;
