@@ -1,0 +1,103 @@
+
+$screen-medium: 1200px;
+$screen-small: 767px;
+
+$color-h3: #e7e7e7;
+$color-bg-sign: #5e42b0;
+$color-border-sign: #8f7bc8;
+
+.actions {
+    max-width: 1920px;
+    min-width: 1000px;
+    background-color: #fff;
+}
+
+.actions__card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &__image {
+        width: 50%;
+        height: 730px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__expl {
+        width: 50%;
+        padding-top: 200px;
+        padding-left: 120px;
+        padding-bottom: 120px;
+        padding-right: 40px;
+    }
+
+    &__h2 {
+
+        font-size: 90px;
+        font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        color: $color-h3;
+    }
+
+    &__text {
+        margin-top: 100px;
+        width: 330px;
+        font-size: 24px;
+    }
+
+    &__underline {
+        color: transparent;
+        border-bottom: 4px solid $color-bg-sign;
+        width: 20px;
+        height: 80px;
+    }
+
+    &__sign {
+        width: 170px;
+        height: 155px;
+        display: flex;
+        position: absolute;
+        // left: calc(50%-85px);
+        left: calc(50% - 85px);
+        top: 210px;
+
+        font-size: 24px;
+        font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        background-color: $color-bg-sign;
+        color: #fff;
+
+        &__text {
+            margin: auto;
+            padding-bottom: 4px;
+            border-bottom: 4px solid $color-border-sign;
+        }
+    }
+
+    &_1 {
+        .actions__card__image {
+            background-image: url('../img/actions/actions_1.jpg');
+        }
+    }
+
+    &_2 {
+
+        flex-direction: row-reverse;
+        .actions__card__image {
+            background-image: url('../img/actions/actions_2.jpg');
+        }
+    }
+
+    &_3 {
+        .actions__card__image {
+            background-image: url('../img/actions/actions_3.jpg');
+        }
+    }
+}
+
+@media screen and (max-width: $screen-small) {}
+@media screen and (max-width: $screen-medium) {}
+
