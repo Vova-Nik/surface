@@ -1,42 +1,4 @@
-$color-siren: #5e42b0;
-$color-siren-light: #9b80ec;
-$color-gray: #e7e7e7;
-$color-grey-background: #f5f4f9;
-
-$anim-duration: 5s;
-
-$ttt: rgba(233, 20, 20, 0.4);
-$ggg: rgba(118, 250, 118, 0.4);
-$rrr: rgba(255, 11, 11, 0.8);
-
-$screen-medium: 1200px;
-$screen-small: 767px;
-
-%font-pn-bold {
-    font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
-    font-weight: 800;
-}
-
-%font-pn-light {
-    font-family: "ProximaNova-Light", Arial, Helvetica, sans-serif;
-    font-weight: 200;
-}
-
-%font-pn-regular {
-    font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-}
-
-%font-pn-semibold {
-    font-family: "ProximaNova-Semibold", Arial, Helvetica, sans-serif;
-    font-weight: 600;
-}
-
-%bg-pos {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
+@import 'var';
 
 /***********************************************************************************/
 
@@ -354,6 +316,11 @@ $screen-small: 767px;
 
             &__wrapper {
                 padding-left: 10px;
+            }
+
+            &__row_num_03{
+                padding-top: 30px;
+                padding-bottom: 30px;
             }
         }
     }

@@ -1,6 +1,4 @@
-
-$screen-medium: 1200px;
-$screen-small: 767px;
+@import 'var';
 
 $color-h3: #e7e7e7;
 $color-bg-sign: #5e42b0;
@@ -40,6 +38,7 @@ $color-border-sign: #8f7bc8;
         font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
         font-weight: 800;
         color: $color-h3;
+        text-transform: uppercase;
     }
 
     &__text {
@@ -60,7 +59,6 @@ $color-border-sign: #8f7bc8;
         height: 155px;
         display: flex;
         position: absolute;
-        // left: calc(50%-85px);
         left: calc(50% - 85px);
         top: 210px;
 
@@ -86,6 +84,7 @@ $color-border-sign: #8f7bc8;
     &_2 {
 
         flex-direction: row-reverse;
+
         .actions__card__image {
             background-image: url('../img/actions/actions_2.jpg');
         }
@@ -98,6 +97,58 @@ $color-border-sign: #8f7bc8;
     }
 }
 
-@media screen and (max-width: $screen-small) {}
-@media screen and (max-width: $screen-medium) {}
+@media screen and (max-width: $screen-medium) {
+    .actions {
+        // max-width: 1920px;
+        min-width: 320px;
+        // background-color: #fff;
+    }
 
+    .actions__card {
+        // position: relative;
+        // display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+
+        &__image {
+            width: 100%;
+            height: 586px;
+        }
+
+        &__expl {
+            width: 100%;
+            padding-top: 70px;
+            padding-left: 0px;
+            padding-bottom: 50px;
+            padding-right: 0;
+            // background-color: yellowgreen;
+        }
+
+        &__h2 {
+            width: 94%;
+            margin: 0px auto;
+            // background-color: tomato;
+
+        }
+
+        &__text {
+            width: 94%;
+            margin: 0px auto;
+            // background-color: rgb(255, 71, 255);
+        }
+
+
+        &__sign {
+            width: 117px;
+            height: 117px;
+            // display: flex;
+            // position: absolute;
+            left: 32px;
+            top: 500px;
+        }
+    }
+
+}
+
+@media screen and (max-width: $screen-small) {}

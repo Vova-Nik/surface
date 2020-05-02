@@ -1,39 +1,42 @@
+
 @use 'top';
 @use 'athlets';
 @use 'animation';
+@use 'actions';
 
+@import 'var';
 
-$color-siren: #5e42b0;
-$color-siren-light: #9b80ec;
+// $color-siren: #5e42b0;
+// $color-siren-light: #9b80ec;
 
-$screen-medium: 1380px;
-$screen-small: 767px;
+// $screen-medium: 1380px;
+// $screen-small: 767px;
 
-%font-pn-bold {
-    font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
-    font-weight: 800;
-}
+// %font-pn-bold {
+//     font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
+//     font-weight: 800;
+// }
 
-%font-pn-light {
-    font-family: "ProximaNova-Light", Arial, Helvetica, sans-serif;
-    font-weight: 200;
-}
+// %font-pn-light {
+//     font-family: "ProximaNova-Light", Arial, Helvetica, sans-serif;
+//     font-weight: 200;
+// }
 
-%font-pn-regular {
-    font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-}
+// %font-pn-regular {
+//     font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
+//     font-weight: 400;
+// }
 
-%font-pn-semibold {
-    font-family: "ProximaNova-Semibold", Arial, Helvetica, sans-serif;
-    font-weight: 600;
-}
+// %font-pn-semibold {
+//     font-family: "ProximaNova-Semibold", Arial, Helvetica, sans-serif;
+//     font-weight: 600;
+// }
 
-%bg-pos {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
+// %bg-pos {
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: contain;
+// }
 
 /*****************************************************************************/
 body {
