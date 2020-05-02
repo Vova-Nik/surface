@@ -367,7 +367,7 @@ $screen-small: 767px;
         .cardTypeAthlets {
 
             position: relative;
-            height: 650px;
+            height: 610px;
 
             &__imgHolder {
                 position: absolute;
@@ -468,7 +468,7 @@ $screen-small: 767px;
                 margin: 0 auto;
                 display: flex;
                 justify-content: center;
-                padding-top: 10px;
+                padding-top: 0px;
                 padding-bottom: 25px;
                 background-color: $color-grey-background;
 
@@ -533,14 +533,14 @@ $screen-small: 767px;
                 &__image {
                     background-image: url('../img/athlets/addon2_320.svg');
                     width: 100%;
-                    left: 0;
-                    top: -345px;
+                    left: -18px;
+                    top: -335px;
                     height: 300px;
                     background-position: center;
                 }
 
                 &__addon_2 {
-                    left: calc(50% - 110px);
+                    left: calc(50% - 100px);
                     top: 6%;
                 }
             }
