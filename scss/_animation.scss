@@ -2,87 +2,74 @@ $color-active: #5c3caf;
 $color-passive: #d8d8d8;
 
 
-
-@keyframes animBlock1 {
+@keyframes animBlock {
     0% {
-        visibility: visible;
+        opacity: 1;
+        left: 0%;
     }
 
-    32% {
-        visibility: visible;
+    23% {
+        opacity: 1;
+        left: 0%;
+    }
+
+    27% {
+        opacity: 0;
+        left: 0%;
+    }
+
+    29% {
+        opacity: 0;
+        left: -100%;
     }
 
     33% {
-        visibility: hidden;
+        opacity: 1;
+        left: - 100%;
     }
 
-    65% {
-        visibility: hidden;
+    54% {
+        opacity: 1;
+        left: - 100%;
     }
 
-    66% {
-        visibility: hidden;
+    60% {
+        opacity: 0;
+        left: - 100%;
     }
 
-    100% {
-        visibility: hidden;
-    }
-}
-
-@keyframes animBlock2 {
-    0% {
-        visibility: hidden;
-    }
-
-    32% {
-        visibility: hidden;
-    }
-
-    33% {
-        visibility: visible;
-    }
-
-    65% {
-        visibility: visible;
+    62% {
+        opacity: 0;
+        left: - 200%;
     }
 
     66% {
-        visibility: hidden;
+        opacity: 1;
+        left: - 200%;
+    }
+
+    91% {
+        opacity: 1;
+        left: - 200%;
+    }
+
+    95% {
+        opacity: 0;
+        left: - 200%;
+    }
+
+    99% {
+        opacity: 0;
+        left: 0%;
     }
 
     100% {
-        visibility: hidden;
-    }
-}
-
-@keyframes animBlock3 {
-    0% {
-        visibility: hidden;
-    }
-
-    32% {
-        visibility: hidden;
-    }
-
-    33% {
-        visibility: hidden;
-    }
-
-    65% {
-        visibility: hidden;
-    }
-
-    66% {
-        visibility: visible;
-    }
-
-    100% {
-        visibility: visible;
+        opacity: 0;
+        left:  0%;
     }
 }
 
 /********************************************************************/
-
 
 @keyframes animDot1 {
     0% {

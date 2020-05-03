@@ -8,14 +8,41 @@
 }
 
 .cardTypeAthlets {
+    position: relative;
 
+    &__imgHolder {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        background-color: transparent;
+        // background-color: tomato;
+    }
 
-    &__container {
+    &__image {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    &__addon {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    &__frame {
         display: flex;
+        flex-direction: column;
+    }
+
+    &__cont {
+        display: flex;
+        justify-content: flex-end;
         max-width: 76%;
         margin: 0 auto;
         padding-left: 2px;
-        justify-content: flex-end;
+
     }
 
     &__h3 {
@@ -31,32 +58,23 @@
         &__pre {
             display: inline-block;
             vertical-align: top;
-            padding-top: 5px;
-            padding-bottom: 6px;
+            padding-top: 10px;
             margin-right: 10px;
-            border-bottom: solid 4px $color-siren;
             text-transform: uppercase;
             font-size: 18px;
+            line-height: 18px;
             @extend%font-pn-bold;
             font-weight: 800;
             color: black;
-        }
-    }
 
-    &_n {
-        &_1 {
-            .cardTypeAthlets__h3__pre_3 {
-                color: black;
-                border-bottom: solid 4px #c1c1c1;
-                border-bottom: solid 4px #efefef;
-
-            }
-        }
-
-        &_2 {
-            .cardTypeAthlets__h3__pre_3 {
-                color: #8765dd;
-                border-bottom: solid 4px #fff;
+            &::after {
+                content: "";
+                display: block;
+                height: 5px;
+                width: 100%;
+                margin-top: 5px;
+                border-radius: 3px;
+                background-color: $color-siren;
             }
         }
     }
@@ -64,13 +82,6 @@
     &__wrapper {
         width: 50%;
         padding-left: 60px;
-    }
-
-    &__imgHolder {
-        width: 50%;
-        position: relative;
-        background-color: transparent;
-        // background-color: tomato;
     }
 
     &__text {
@@ -83,10 +94,6 @@
         &_3 {
             color: white;
         }
-    }
-
-    &__image {
-        position: absolute;
     }
 
     &__row {
@@ -119,105 +126,115 @@
         }
     }
 
-    &__addon {
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
-
-    &__image {
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
 
     &__dots {
         display: none;
     }
-}
 
-.cardTypeAthlets_n {
-    &_1 {
-        .cardTypeAthlets__image {
-            background-image: url('../img/athlets/addon1.svg');
-            width: 596px;
-            height: 949px;
-            top: -416px;
-            right: 40px;
+    &_n {
+        &_1 {
+            .cardTypeAthlets__h3__pre_3 {
+                color: black;
+
+                &::after {
+                    background-color: #c1c1c1;
+                }
+            }
+
+            .cardTypeAthlets__image {
+                background-image: url('../img/athlets/addon1.svg');
+                top: calc(50% - 420px);
+                right: 40px;
+                height: 949px;
+                width: 596;
+            }
+
+            .cardTypeAthlets__addon_1 {
+                width: 100%;
+                height: 100%;
+                background-image: url('../img/athlets/footballer1.gif');
+            }
+
+            .cardTypeAthlets__addon_2 {
+                width: 48px;
+                height: 32px;
+                position: absolute;
+                top: 10%;
+                left: 25%;
+                background-image: url('../img/athlets/plus_type1.svg');
+            }
         }
 
-        .cardTypeAthlets__addon_1 {
-            width: 100%;
-            height: 100%;
-            background-image: url('../img/athlets/footballer1.gif');
-        }
-
-        .cardTypeAthlets__addon_2 {
-            width: 48px;
-            height: 32px;
-            position: absolute;
-            top: 10%;
-            left: 10%;
-            background-image: url('../img/athlets/plus_type1.svg');
+        &_2 {
+            .cardTypeAthlets__h3__pre_3 {
+                color: #8765dd;
+                border-bottom: solid 4px #fff;
+            }
         }
     }
+}
 
-    &_2 {
-        .cardTypeAthlets__container {
-            flex-direction: row-reverse;
+.cardTypeAthlets_n_2 {
+
+    .cardTypeAthlets__imgHolder {
+        margin-left: 50%;
+    }
+
+    .cardTypeAthlets__cont {
+        flex-direction: row-reverse;
+    }
+
+    .cardTypeAthlets__wrapper {
+        padding-left: 90px;
+    }
+
+    .cardTypeAthlets__image {
+        background-image: url('../img/athlets/addon2.svg');
+        height: 96%;
+        height: 815px;
+        width: 991px;
+        left: -400px;
+        top: -80px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .cardTypeAthlets__addon_1 {
+        width: 100%;
+        height: 100%;
+        background-image: url('../img/athlets/footballer2.gif');
+
+    }
+
+    .cardTypeAthlets__addon_2 {
+        width: 48px;
+        height: 32px;
+        position: absolute;
+        top: 130px;
+        left: 300px;
+        background-image: url('../img/athlets/plus_type2.svg');
+    }
+
+    .cardTypeAthlets__addon_3 {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 390px;
+        left: 750px;
+        background-image: url('../img/athlets/plus.svg');
+    }
+
+    .cardTypeAthlets__row {
+        &_num_02 {
+            padding-top: 64px;
+            padding-bottom: 60px;
         }
 
-        .cardTypeAthlets__wrapper {
-            padding-left: 90px;
-        }
-
-        .cardTypeAthlets__image {
-            background-image: url('../img/athlets/addon2.svg');
-            top: -526px;
-            left: -140px;
-            width: 991px;
-            height: 815px;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-        }
-
-        .cardTypeAthlets__addon_1 {
-            width: 100%;
-            height: 100%;
-            background-image: url('../img/athlets/footballer2.gif');
-
-        }
-
-        .cardTypeAthlets__addon_2 {
-            width: 48px;
-            height: 32px;
-            position: absolute;
-            top: 130px;
-            left: 300px;
-            background-image: url('../img/athlets/plus_type2.svg');
-        }
-
-        .cardTypeAthlets__addon_3 {
-            width: 25px;
-            height: 25px;
-            position: absolute;
-            top: 390px;
-            left: 750px;
-            background-image: url('../img/athlets/plus.svg');
-        }
-
-        .cardTypeAthlets__row {
-            &_num_02 {
-                padding-top: 64px;
-                padding-bottom: 60px;
-            }
-
-            &_num_03 {
-                padding-top: 90px;
-                padding-bottom: 86px;
-                background-color: #090c35;
-            }
+        &_num_03 {
+            padding-top: 90px;
+            padding-bottom: 86px;
+            background-color: #090c35;
         }
     }
 }
@@ -228,8 +245,7 @@
 
     .cardTypeAthlets {
 
-
-        &__container {
+        &__cont {
             max-width: 90%;
             padding-left: 0;
         }
@@ -273,14 +289,10 @@
                 padding-right: 0;
             }
 
-            &__imgHolder {
-                width: 36%;
-            }
-
             &__image {
                 background-image: url('../img/athlets/addon1_768.svg');
-                left: -220px;
-                top: -400px;
+                left: -180px;
+                top: -30px;
                 width: 460px;
             }
 
@@ -298,14 +310,10 @@
                 padding-right: 55px;
             }
 
-            &__imgHolder {
-                width: 40%;
-            }
-
             &__image {
                 background-image: url('../img/athlets/addon2_768.svg');
-                top: -370px;
-                left: -270px;
+                top: -10px;
+                left: -240px;
                 height: 540px;
             }
 
@@ -318,7 +326,7 @@
                 padding-left: 10px;
             }
 
-            &__row_num_03{
+            &__row_num_03 {
                 padding-top: 30px;
                 padding-bottom: 30px;
             }
@@ -332,31 +340,46 @@
     .partAthlets {
 
         .cardTypeAthlets {
-
-            position: relative;
-            height: 610px;
+            background-color: #f5f4f9;
 
             &__imgHolder {
-                position: absolute;
                 z-index: 4;
-                visibility: visible;
                 width: 100%;
+                margin: 0;
+                padding: 0;
                 height: 240px;
                 min-width: 200px;
             }
 
-            &__container {
+            &__frame {
+                width: 300%;
+                flex-direction: row;
+                justify-content: flex-start;
+                animation-name: animBlock;
+                animation-duration: $anim-duration;
+                animation-iteration-count: infinite;
+                position: relative;
+            }
+
+            &__cont {
                 width: 100%;
-                padding-left: 0;
-                padding-right: 0;
-                display: block;
+                max-width: 100%;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin: 0;
+                background-color: transparent;
+            }
+
+            &__wrapper {
+                width: 100%;
+                padding-left: 3%;
+                padding-right: 3%;
             }
 
             &__text {
                 font-size: 15px;
                 letter-spacing: 0;
                 color: black;
-                height: 120px;
                 padding: 0;
                 overflow: hidden;
             }
@@ -364,23 +387,21 @@
             &__h3 {
                 font-size: 28px;
                 line-height: 42px;
-            }
 
-            &__wrapper {
-                width: 100%;
-                min-width: 300px;
-                padding-left: 3%;
-                padding-right: 3%;
-            }
+                &__pre {
+                    color: black;
 
-            &__h3__pre{
-                padding-bottom: 0;
-                border-bottom: 4px solid #5e42b0;
+                    &::after {
+                        height: 4px;
+                        margin-top: 1px;
+                        background-color: $color-siren;
+                    }
+                }
             }
 
             &__row {
                 &_num_00 {
-                    height: 310px;
+                    height: 320px;
                     padding-top: 20px;
                     padding-bottom: 0px;
                     font-size: 50px;
@@ -391,41 +412,23 @@
 
                 &_num_01 {
                     width: 100%;
-                    height: 260px;
-                    position: absolute;
-                    bottom: 0;
                     padding-top: 80px;
                     padding-bottom: 0;
                     background-color: #f5f4f9;
-                    animation-name: animBlock1;
-                    animation-duration: $anim-duration;
-                    animation-iteration-count: infinite;
                 }
 
                 &_num_02 {
                     width: 100%;
-                    height: 260px;
-                    position: absolute;
-                    bottom: 0;
                     padding-top: 80px;
                     padding-bottom: 0;
                     background-color: #f5f4f9;
-                    animation-name: animBlock2;
-                    animation-duration: $anim-duration;
-                    animation-iteration-count: infinite;
                 }
 
                 &_num_03 {
                     width: 100%;
-                    height: 260px;
-                    position: absolute;
-                    bottom: 0;
                     padding-top: 80px;
                     padding-bottom: 0;
                     background-color: #f5f4f9;
-                    animation-name: animBlock3;
-                    animation-duration: $anim-duration;
-                    animation-iteration-count: infinite;
                 }
             }
 
@@ -435,7 +438,7 @@
                 margin: 0 auto;
                 display: flex;
                 justify-content: center;
-                padding-top: 0px;
+                padding-top: 20px;
                 padding-bottom: 25px;
                 background-color: $color-grey-background;
 
@@ -469,20 +472,13 @@
 
         .cardTypeAthlets_n_1 {
 
-            .cardTypeAthlets__row_num_02 {
-                .cardTypeAthlets__wrapper {
-                    background-color: #f5f4f9;
-                }
-            }
-
             .cardTypeAthlets {
-
                 &__image {
                     background-image: url('../img/athlets/addon1_320.svg');
                     width: 100%;
                     height: 100%;
                     left: 0;
-                    top: -320px;
+                    top: 80px;
                     height: 300px;
                     background-position: center;
                 }
@@ -496,12 +492,11 @@
 
         .cardTypeAthlets_n_2 {
             .cardTypeAthlets {
-
                 &__image {
                     background-image: url('../img/athlets/addon2_320.svg');
                     width: 100%;
                     left: -18px;
-                    top: -335px;
+                    top: 55px;
                     height: 300px;
                     background-position: center;
                 }
@@ -514,4 +509,9 @@
         }
     }
 
+}
+
+.span {
+    height: 400px;
+    background-color: yellow;
 }
