@@ -1,0 +1,74 @@
+@import 'var';
+
+.bottom {
+
+    height: 959px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0a0e34;
+    background-image: url('../img/bottom/stadium.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    &__footer {
+        width: 100%;
+        display: flex;
+        margin-top: auto;
+        justify-content: space-between;
+        height: 168px;
+        padding: 70px 50px;
+        background-color: rgba(10, 15, 52, .5); //#0a0e34;
+
+        &__surface {
+            width: 200px;
+            height: 100%;
+            background-image: url('../img/top/surface1.png');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        &__socials {
+            display: flex;
+            width: 180px;
+
+
+            &__item {
+                display: block;
+                width: 50px;
+                margin: 0 4px;
+                height: 100%;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+
+                &:nth-child(1) {
+                    background-image: url('../img/bottom/facebook.svg');
+                }
+
+                &:nth-child(2) {
+                    background-image: url('../img/bottom/twitter.svg');
+                }
+
+                &:nth-child(3) {
+                    background-image: url('../img/bottom/insta.svg');
+                }
+            }
+
+        }
+
+        &__link{
+            color: white;
+            padding: 0 4px;
+
+        }
+
+        &__contacts {
+            display: flex;
+
+        }
+
+    }
+}
