@@ -26,11 +26,10 @@ $color-border-sign: #8f7bc8;
 
     &__expl {
         width: 50%;
-        padding-top: 200px;
-        padding-left: 5%;
+        padding-top: 235px;
+        padding-left: 7%;
         padding-bottom: 120px;
         padding-right: 5%;
-
         max-height: 730px;
         overflow: hidden;
     }
@@ -61,15 +60,7 @@ $color-border-sign: #8f7bc8;
             background-color: $color-bg-sign;
             bottom: 0;
             left: 0;
-
         }
-    }
-
-    &__underline {
-        color: transparent;
-        border-bottom: 4px solid $color-bg-sign;
-        width: 20px;
-        height: 80px;
     }
 
     &__sign {
@@ -79,7 +70,6 @@ $color-border-sign: #8f7bc8;
         position: absolute;
         left: calc(50% - 85px);
         top: 210px;
-
         font-size: 24px;
         font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
         font-weight: 800;
@@ -109,7 +99,7 @@ $color-border-sign: #8f7bc8;
 
             min-width: 330px;
             max-width: 332px;
-            margin-top: 120px;
+            margin-top: 90px;
         }
     }
 
@@ -122,13 +112,13 @@ $color-border-sign: #8f7bc8;
         }
 
         .actions__card__expl {
-            padding-left: 8%;
+            padding-left: 9%;
         }
 
         .actions__card__text {
             min-width: 394px;
             max-width: 396px;
-            margin-top: 100px;
+            margin-top: 55px;
         }
     }
 
@@ -140,7 +130,7 @@ $color-border-sign: #8f7bc8;
         .actions__card__text {
             min-width: 514px;
             max-width: 516px;
-            margin-top: 120px;
+            margin-top: 90px;
         }
     }
 }
@@ -219,7 +209,8 @@ $color-border-sign: #8f7bc8;
 
             &__text {
                 width: 92%;
-                padding-right: 40px;
+                padding-right: 20px;
+                padding-bottom: 10px;
                 min-width: 300px;
                 margin: 14px auto;
                 min-height: 100px;

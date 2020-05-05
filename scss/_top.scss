@@ -1,35 +1,4 @@
-$color-siren: #5e42b0;
-$color-siren-light: #9b80ec;
-
-
-$screen-medium: 1380px;
-$screen-small: 767px;
-
-%font-pn-bold {
-    font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
-    font-weight: 800;
-}
-
-%font-pn-light {
-    font-family: "ProximaNova-Light", Arial, Helvetica, sans-serif;
-    font-weight: 200;
-}
-
-%font-pn-regular {
-    font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-}
-
-%font-pn-semibold {
-    font-family: "ProximaNova-Semibold", Arial, Helvetica, sans-serif;
-    font-weight: 600;
-}
-
-%bg-pos {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
+@import 'var';
 
 .top {
     width: 100%;
@@ -84,7 +53,7 @@ $screen-small: 767px;
         .down-text {
             position: relative;
             text-align: right;
-            margin-right: 11%;
+            margin-right: 10%;
             z-index: 2;
         }
 
@@ -106,7 +75,7 @@ $screen-small: 767px;
     .top__menu {
         position: relative;
         margin-top: 10px;
-        padding-right: 9%;
+        padding-right: 10%;
         z-index: 12;
     }
 
@@ -131,77 +100,7 @@ $screen-small: 767px;
             color: $color-siren-light;
         }
     }
-
-    .top__soft {
-        display: flex;
-        justify-content: center;
-        margin-top: 175px;
-
-        .button {
-            position: relative;
-            margin: 0 20px;
-            width: 320px;
-            height: 80px;
-            border-radius: 40px/40px;
-            background-color: $color-siren;
-            box-shadow: 1px 12px 8px 7px rgba(0, 0, 0, 0.3);
-            border-color: transparent;
-            text-align: left;
-            font-size: 14px;
-            text-transform: uppercase;
-            color: white;
-
-            &:focus {
-                border: transparent 0px solid;
-            }
-
-            &:hover {
-                box-shadow: 1px 12px 8px 7px rgba(0, 0, 0, 0.9);
-            }
-
-            .btn-txt-1 {
-                @extend%font-pn-light;
-            }
-
-            .btn-txt-2 {
-                @extend%font-pn-semibold;
-            }
-        }
-
-        .apple {
-            padding-left: 100px;
-
-            &:before {
-                content: '';
-                display: block;
-                position: absolute;
-                left: 36px;
-                top: 16px;
-                width: 40px;
-                height: 40px;
-                background-image: url('../img/top/icon_apple.svg');
-                @extend%bg-pos;
-            }
-        }
-
-        .google {
-            padding-left: 140px;
-
-            &:before {
-                content: '';
-                display: block;
-                position: absolute;
-                left: 60px;
-                top: 18px;
-                width: 40px;
-                height: 40px;
-                background-image: url('../img/top/play_store.svg');
-                @extend%bg-pos;
-            }
-        }
-    }
 }
-
 
 /*****************************************************************/
 
@@ -251,7 +150,6 @@ $screen-small: 767px;
             }
         }
 
-
         .top__soft {
             margin-top: 100px;
         }
@@ -286,7 +184,7 @@ $screen-small: 767px;
             line-height: 40px;
 
             .up-text {
-               width: 250px;
+                width: 250px;
                 margin-left: calc(50% - 150px);
                 margin-right: auto;
             }
@@ -335,45 +233,6 @@ $screen-small: 767px;
             .top__menu__li:nth-child(5) {
                 padding-left: 0px;
                 padding-right: 40px;
-            }
-        }
-
-        .top__soft {
-            display: flex;
-            justify-content: center;
-            margin-top: 0px;
-
-            .button {
-                margin: 0 5px;
-                width: 140px;
-                height: 40px;
-                border-radius: 20px/20px;
-                box-shadow: 1px 12px 8px 7px rgba(56, 38, 38, 0.3);
-                border-color: transparent;
-                text-align: left;
-                font-size: 8px;
-            }
-
-            .apple {
-                padding-left: 50px;
-
-                &:before {
-                    left: 18px;
-                    top: 8px;
-                    width: 20px;
-                    height: 20px;
-                }
-            }
-
-            .google {
-                padding-left: 70px;
-
-                &:before {
-                    left: 30px;
-                    top: 9px;
-                    width: 20px;
-                    height: 20px;
-                }
             }
         }
     }

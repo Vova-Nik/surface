@@ -1,74 +1,115 @@
 @import 'var';
 
 .downloadSoft {
-        display: flex;
-        justify-content: center;
-        margin-top: 175px;
+    display: flex;
+    justify-content: center;
+    margin-top: 175px;
+
+    &__button {
+        position: relative;
+        margin: 0 20px;
+        width: 320px;
+        height: 80px;
+        border-radius: 40px/40px;
+        background-color: $color-siren;
+        box-shadow: 1px 12px 8px 7px rgba(0, 0, 0, 0.3);
+        border-color: transparent;
+        text-align: left;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: white;
+
+
+        // &:focus {
+        //     border: transparent 0px solid;
+        // }
+
+        &:hover {
+            box-shadow: 1px 12px 8px 7px rgba(0, 0, 0, 0.9);
+        }
+
+        &__txt_1 {
+            font-family: "ProximaNova-Light", Arial, Helvetica, sans-serif;
+            font-weight: 200;
+        }
+
+        &__txt_2 {
+            font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
+            font-weight: 400;
+        }
+
+
+        &_apple {
+            padding-left: 100px;
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 36px;
+                top: 16px;
+                width: 40px;
+                height: 40px;
+                background-image: url('../img/top/icon_apple.svg');
+                @extend%bg-pos;
+            }
+        }
+
+        &_google {
+            padding-left: 140px;
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 60px;
+                top: 18px;
+                width: 40px;
+                height: 40px;
+                background-image: url('../img/top/play_store.svg');
+                @extend%bg-pos;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: $screen-small) {
+
+    .downloadSoft {
+        margin-top: 0px;
 
         &__button {
-            position: relative;
-            margin: 0 20px;
-            width: 320px;
-            height: 80px;
-            border-radius: 40px/40px;
-            background-color: $color-siren;
-            box-shadow: 1px 12px 8px 7px rgba(0, 0, 0, 0.3);
+            margin: 0 5px;
+            width: 140px;
+            height: 40px;
+            border-radius: 20px/20px;
+            box-shadow: 1px 12px 8px 7px rgba(56, 38, 38, 0.3);
             border-color: transparent;
             text-align: left;
-            font-size: 14px;
-            text-transform: uppercase;
-            color: white;
-
-
-            &:focus {
-                border: transparent 0px solid;
-            }
-
-            &:hover {
-                box-shadow: 1px 12px 8px 7px rgba(0, 0, 0, 0.9);
-            }
-
-            &__txt_1 {
-                font-family: "ProximaNova-Light", Arial, Helvetica, sans-serif;
-                font-weight: 200;
-            }
-
-            &__txt_2 {
-                font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
-                font-weight: 400;
-            }
-
+            font-size: 8px;
 
             &_apple {
-                padding-left: 100px;
+                padding-left: 50px;
 
                 &:before {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    left: 36px;
-                    top: 16px;
-                    width: 40px;
-                    height: 40px;
-                    background-image: url('../img/top/icon_apple.svg');
-                    @extend%bg-pos;
+                    left: 18px;
+                    top: 8px;
+                    width: 20px;
+                    height: 20px;
                 }
             }
 
             &_google {
-                padding-left: 140px;
+                padding-left: 70px;
 
                 &:before {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    left: 60px;
-                    top: 18px;
-                    width: 40px;
-                    height: 40px;
-                    background-image: url('../img/top/play_store.svg');
-                    @extend%bg-pos;
+                    left: 30px;
+                    top: 9px;
+                    width: 20px;
+                    height: 20px;
                 }
             }
         }
     }
+}
