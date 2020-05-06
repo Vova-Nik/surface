@@ -11,23 +11,26 @@
         width: 320px;
         height: 80px;
         border-radius: 40px/40px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        
         background-color: $color-siren;
-        box-shadow: 1px 12px 8px 7px rgba(0, 0, 0, 0.3);
         border-color: transparent;
         text-align: left;
         font-size: 14px;
         text-transform: uppercase;
         color: white;
 
-        padding-right: 10px;
-
-
-        // &:focus {
-        //     border: transparent 0px solid;
-        // }
+        &:active {
+            background-color: #4e32a0;
+            border: 3px solid #3e2290;
+        }
 
         &:hover {
-            box-shadow: 1px 12px 8px 7px rgba(0, 0, 0, 0.9);
+          box-shadow: 1px 12px 8px 7px rgba(0, 0, 0, 1);
         }
 
         &__txt_1 {
@@ -39,7 +42,6 @@
             font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
             font-weight: 400;
         }
-
 
         &_apple {
             padding-left: 100px;
@@ -74,7 +76,6 @@
         }
     }
 }
-
 
 @media screen and (max-width: $screen-small) {
 
