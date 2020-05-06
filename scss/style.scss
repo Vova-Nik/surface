@@ -7,10 +7,8 @@
 
 @import 'var';
 
-
-/*****************************************************************************/
 body {
-    background-color: wheat;
+    background-color: white;
     @extend %font-pn-regular;
 }
 
@@ -24,10 +22,3 @@ body
     min-width: 320px;
     margin: 0 auto;
 }
-
-.span {
-    height: 100px;
-    background-color: white
-}
-
-/****************************************************************************/

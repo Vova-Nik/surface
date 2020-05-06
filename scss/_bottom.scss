@@ -3,9 +3,9 @@
 .bottom {
 
     height: 959px;
-    padding: 0 60px 0 50px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 200px;
     background-color: #0a0e34;
     background-image: url('../img/bottom/stadium.jpg');
     background-position: center;
@@ -29,7 +29,6 @@
         }
 
         &__txt {
-
             position: relative;
             color: white;
             font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
@@ -41,7 +40,7 @@
                 width: 140px;
                 height: 160px;
                 position: absolute;
-                left: 15px;
+                left: calc(50% - 345px);
                 top: -5px;
                 background-image: url('../img/top/rectangle.svg');
                 background-position: center;
@@ -55,7 +54,7 @@
                 width: 275px;
                 height: 320px;
                 position: absolute;
-                right: 120px;
+                right: calc(50% - 230px);
                 top: -70px;
                 background-image: url('../img/top/rectangle.svg');
                 background-position: center;
@@ -87,11 +86,16 @@
 
     &__footer {
         width: 100%;
+        padding: 0 60px 0 50px;
         display: flex;
         margin-top: auto;
         justify-content: space-between;
         height: 168px;
-        padding: 70px 0px;
+
+        padding-top: 70px;
+        padding-left: 50px;
+        padding-right: 60px;
+        padding-bottom: 70px;
         background-color: rgba(10, 15, 52, .5); //#0a0e34;
 
         &__surface {
@@ -150,7 +154,10 @@
         &__downloadApp {
             margin-top: 128px;
             flex-direction: column;
-            align-items: center;
+
+            &__img{
+                margin: 0 auto;
+            }
 
             &__txt {
                 margin-top: 80px;
@@ -163,9 +170,21 @@
                 line-height: 80px;
             }
         }
+
+        &__downloadApp__txt {
+            &::before {
+                left: calc(50% - 320px);
+            }
+
+            &::after {
+                right: calc(50% - 210px);
+            }
+        }
+        
         &__footer{
             height: 90px;
-            padding: 30px 0 30px 0;
+            padding: 30px 0;
+            justify-content: center;
 
             &__surface{
                 display: none;
@@ -190,6 +209,7 @@
             &__img {
                 width: 70px;
                 height: 80px;
+                margin: 0 auto;
             }
 
             &__txt {
@@ -201,7 +221,7 @@
                     background-image: url('../img/bottom/rectangle.svg');
                     width: 60px;
                     height: 70px;
-                    left: 0px;
+                    left: calc(50% - 130px);
                     top: -10px;
                 }
     
@@ -209,7 +229,7 @@
                     background-image: url('../img/bottom/rectangle.svg');
                     width: 100px;
                     height: 129px;
-                    right: 50px;
+                    right: calc(50% - 98px);
                     top: -40px;
                 }
             }
